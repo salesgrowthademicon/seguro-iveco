@@ -1,0 +1,90 @@
+.faq-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.faq-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #f1f1f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.faq-container p {
+    font-size: 14px;
+}
+
+.content-title {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-title h2 {
+    color: var(--primary);
+    margin: 0;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondary);
+}
+
+.faq-answer {
+    padding-right: 10px;
+    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    font-size: 14px;
+}
+
+.faq-item.active .faq-answer {
+    padding-right: 10px;
+    max-height: 1000px;
+    transition: max-height 1s ease;
+}
+
+.faq-answer ul {
+    list-style-type: none; /* Remove o estilo padrão da lista (bolinha, numeração, etc.) */
+    padding: 0; /* Remove o espaçamento interno da lista */
+    margin: 0; /* Remove o espaçamento externo da lista */
+  }
+  
+  .faq-answer ul li {
+    position: relative; /* Permite posicionar a bolinha */
+    padding-left: 20px; /* Adiciona um espaçamento à esquerda para a bolinha */
+  }
+  
+  .faq-answer ul li::before {
+    content: "•"; /* Adiciona a bolinha */
+    color: black; /* Define a cor da bolinha como preta */
+    font-size: 14px; /* Define o tamanho da bolinha */
+    position: absolute; /* Posiciona a bolinha absolutamente */
+    left: 0; /* Alinha a bolinha à esquerda da área do item da lista */
+  }
