@@ -1,0 +1,205 @@
+.content-signature {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title-signature {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.title-signature h2 {
+    color: var(--primary) !important;
+}
+
+.title-signature p {
+    color: #1c1c1c;
+    margin-bottom: 30px;
+}
+
+.title-signature p span {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.content-signature h2 {
+    color: var(--primary);
+}
+
+.checkbox-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.checkbox {
+    display: none;
+    /* Esconde o checkbox padrão */
+}
+
+.custom-checkbox {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: white;
+    /* Adiciona o círculo branco no centro */
+    position: relative;
+}
+
+.custom-checkbox.checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.custom-checkbox.checked::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.checkbox-container label:first-of-type {
+    margin-right: 70px;
+}
+
+.form {
+    text-align: start;
+}
+
+.tabela-container {
+    margin: 20px;
+    width: 100%;
+    /* Set the width of the container to 100% */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* Set the width of the table to 100% */
+}
+
+td {
+    border: 1px solid var(--quaternary);
+    padding: 8px;
+    /* width: 50%; Remove this line to allow the td elements to take up 100% width */
+    text-align: start;
+}
+
+
+.information {
+    width: 97%;
+    padding: 2px;
+    padding-left: 15px;
+    background-color: #cff4fc;
+    font-weight: bold;
+    text-align: start;
+    border-radius: 8px;
+    margin-top: 30px;
+    color: #125160;
+}
+
+.button-signature {
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary);
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.button-signature:hover {
+    background-color: var(--secondary);
+}
+
+.text {
+    text-align: start;
+}
+
+.second-holder-form {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.second-holder-form div:first-of-type {
+    margin-bottom: 20px;
+}
+
+.second-holder-form input {
+    border-radius: 100px;
+    outline: none;
+    padding: 8px;
+    padding-left: 10px;
+    border: 1px solid var(--quaternary);
+}
+
+.second-holder-form input:first-of-type {
+    margin-right: 30px;
+}
+
+.content-questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-describe {
+    width: 40%;
+    padding: 7px;
+    padding-left: 15px;
+    border-radius: 100px;
+    margin-top: 15px;
+    outline: none;
+    border: 1px solid var(--quaternary);
+}
+
+.form-second-holder {
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    border-radius: 30px;
+    text-align: start;
+    padding: 15px;
+}
+
+.atention {
+    font-weight: bold;
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.col {
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+
+.col-rigth {
+    width: 25%;
+    display: flex;
+}
+
+.col img {
+    width: 200px;
+}
+
+.middle-col-signature {
+    width: 50%;
+}
