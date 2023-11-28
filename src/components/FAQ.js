@@ -73,7 +73,7 @@ const FAQ = ({ onClose }) => {
       <div className="faq-container" onClick={(e) => e.stopPropagation()}>
         <div className="content-title">
           <h2>Dúvidas frequentes</h2>
-          <CgCloseO style={{ color: "var(--secondary)", cursor: "pointer" }} onClick={() => onClose()} />
+          <CgCloseO style={{ color: "var(--primary)", cursor: "pointer" }} onClick={() => onClose()} />
         </div>
         <ul className="faq-list">
           {faqData.map((item, index) => (

@@ -10,9 +10,9 @@ const Error = () => {
         <img src={risco1} alt="" style={{ width: 150 }} />
       </div>
       <div className="content-error">
-        <h1 style={{ color: "var(--secondary)" }}>Token inválido</h1>
+        <h1 style={{ color: "var(--primary)" }}>Token inválido</h1>
         <p style={{ margin: 0 }}>Entre em contato para mais informações.</p>
-        <p style={{ margin: 0, fontWeight: "bold", color: "var(--secondary)" }}>
+        <p style={{ margin: 0, fontWeight: "bold", color: "var(--primary)" }}>
           Entre em contato (41) 99670-7812.
         </p>
       </div>

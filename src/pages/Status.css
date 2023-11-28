@@ -7,7 +7,7 @@
 }
 
 h1 {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .message {
@@ -16,5 +16,5 @@ h1 {
 
 .message span {
     font-weight: bold;
-    color: var(--secondary);
+    color: var(--primary);
 }
